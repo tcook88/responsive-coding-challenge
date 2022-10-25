@@ -15,10 +15,6 @@
     margin-top: 30px;
     margin-bottom: 60px;
   }
-
-  nav { 
-    margin-left: 100px;
-  }
   
   h1,
   h2,
@@ -47,6 +43,7 @@
   .navigation-links {
     display: flex;
     margin-top: 40px;
+    margin-bottom: 40px;
     justify-content: center;
   }
   
@@ -100,10 +97,6 @@
     text-decoration: underline;
   }
   
-  .image {
-    width: 350px;
-  }
-  
   .app-links {
     font-family: sans-serif;
     background-color: var(--primary-color);
@@ -117,4 +110,30 @@
   .app-links:hover {
     text-decoration: none;
     color: white;
+  }
+
+  @media (max-width: 576px) { 
+    h1 { 
+      font-size: 48px;
+    }
+
+    h2 { 
+      font-size: 32px;
+      text-align: center;
+    }
+
+    p { 
+      text-align: center;
+    }
+
+    .app-links { 
+      display: flex;
+      flex-grow: 1;
+      justify-content: center;
+    }
+
+    .about-row { 
+      display: flex;
+      flex-direction: row;
+    }
   }
